@@ -1,0 +1,52 @@
+#c{
+margin: 0%;    
+font-size: 100%;
+text-align: right;
+}
+
+
+ select{
+  background: transparent;
+  border:none;
+  font-size: 12px;
+  height: 30px;
+  width: 250px;
+ }
+
+ #sele{
+  margin:20px auto 40px auto; 
+   border:1px solid #d9d9d9;
+   height:25px;
+   overflow: hidden;
+   width: 147px;
+   position:relative;
+ }
+
+ #boton{
+  float: right; 
+ }
+
+ .c { 
+  padding: 3px 10px;
+  border: #006666 solid;
+  border-radius: 20px;
+  width: 130em;
+  
+}
+
+#panels{
+  background-color: #00695C;
+}
+
+#icon {
+    text-align: center;
+    color: #ECEFF1;
+  }
+
+ #pru{
+width: 7.5em;
+ }
+
+.glyphicon{
+  font-size: 25px;
+ }

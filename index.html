@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba formulario</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <link rel=StyleSheet href="css/style.css" type="text/css">
+    <link rel=php href="php/operacion_guardar.php" type="text/php">
+    <script type="text/javascript" src="JS/app.js"></script>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <!--<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <!-- Font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+
+  <!--  calendar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+</head>
+
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $('#fecha').datepicker();
+    });
+</script>
+</head>
+<body>
+
+<!--...............................................Menu....................................................................-->
+<div class="container-fluid">
+<nav class="navbar navbar-icon-top navbar-expand-lg" style="background-color: #336666">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #85929E">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a id="icon" class="nav-link">
+              <span id="pru" class="glyphicon glyphicon-home"></span>
+              <br>
+              Panel principal
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="icon">
+              <span id="pru" class="glyphicon glyphicon-file"></span>
+              <br>
+              Nosotros  
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="icon">
+              <span id="pru" class="glyphicon glyphicon-file"></span>
+              <br>
+              Mision y Vision
+              </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="icon">
+                <span id="pru" class="glyphicon glyphicon-plus"></span>
+                <br>
+                Mas
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="icon">
+                <span id="pru" class="glyphicon glyphicon-comment"></span>
+                <br>
+                Ayuda
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="icon">
+                <span id="pru" class="glyphicon glyphicon-lock glyphicon">
+                </span>
+                <br>
+                Cerrar sesión
+                </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>  
+
+<!--...............................................Formukario.......................................................-->
+<div class="container-fluid">
+<div class="panel panel-primary">
+  <div class="panel-heading" id="panels">FORMULARIO EMPLEADO</div>
+     <div id="c" class="panel-body d-flex justify-content-center">
+        <div class="c"> <p></p>
+
+
+            <form action="php/operacion_guardar.php" method="post">
+                <div class="col-md-12 col-lg-12" method="post">
+
+                  <div class="row">
+
+                     <div class="col-lg-4 form-group">       
+                         <div class="col-lg-5">
+                             <font size="2">RFC</font>
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" class="form-control" id="rfc" placeholder="AAAA010203AAA" maxlength="13">
+                         </div>                    
+                     </div>
+
+                     <div class="col-lg-4 form-group">   
+                         <div class="col-lg-5">
+                             <font size="2">Nombre</font>    
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" class="form-control" id="nombre" placeholder="Nombre empleado">
+                         </div>    
+                     </div>
+
+                     <div class="col-lg-4 form-group">           
+                         <div class="col-lg-5">
+                             <font size="2">Apellidos</font>    
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" class="form-control" id="apellidos" placeholder="apellidos del empleado">
+                         </div>   
+                     </div>
+
+                  </div>
+
+
+                  <div class="row">
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">No empleado:</font>
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" class="form-control" id="numemp" placeholder="Número del empleado">
+                         </div>    
+                     </div>
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">CURP</font>:   
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" class="form-control" id="curp" placeholder="AAAA010203MPLBCD11">
+                         </div>     
+                     </div>
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Localidad:</font>   
+                         </div>
+                         <div class="col-sm-7">
+                            <input class="form-control" id="localidad" placeholder="Localidad del empleado">
+                         </div>  
+                     </div>
+
+                  </div>
+
+
+                  <div class="row" >
+
+                  <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Codigo Postal</font>   
+                         </div>
+                         <div class="col-sm-7">
+                            <input type="text" class="form-control" id="postal" placeholder="codigo postal">
+                         </div>
+                     </div> 
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Municipio:</font>
+                         </div>
+                         <div class="col-sm-7">
+                            <input type="text" class="form-control" id="municipio" placeholder="Municipio del empleado">
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Entidad federativa:</font>   
+                         </div>
+                         <div class="col-sm-5">
+                             <select style="width:155%" id="entidad" class="custon-select form-control">
+                                 <option>Sin Selección</option>
+                                 <option>Aguas Calientes</option>
+                                 <option>Baja California</option>
+                                 <option>Baja California Sur</option>
+                                 <option>MEX Campeche</option>
+                                 <option>Chiapas</option>
+                                 <option>Chihuahua</option>
+                                 <option>Coahila</option>
+                                 <option>Colima</option>
+                                 <option>Ciudad de Mexico</option>
+                                 <option>Durango</option>
+                                 <option>Guanajuato</option>
+                                 <option>Guerrero</option>
+                                 <option>Hidalgo</option>
+                                 <option>Jalisco</option>
+                                 <option>Estado de Mexico</option>
+                                 <option>Michoacan</option>
+                                 <option>Morelos</option>
+                                 <option>Nayarit</option>
+                                 <option>Nuevo Leon</option>
+                                 <option>Oaxaca</option>
+                                 <option>Puebla</option>
+                                 <option>Queretaro</option>
+                                 <option>Quintana Roo</option>
+                                 <option>San Luis Potosi</option>
+                                 <option>Sinaloa</option>
+                                 <option>Sonora</option>
+                                 <option>Tabasco</option>
+                                 <option>Tamaulipas</option>
+                                 <option>Tlaxcala</option>
+                                 <option>Veracruz</option>
+                                 <option>Yucatan</option>
+                                 <option>Zacatecas</option>
+                             </select>
+                         </div>
+                     </div>
+
+                  </div>
+
+                  <div class="row">
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Salario:</font>
+                         </div>
+                         <div class="col-sm-7">
+                            <input type="text" class="form-control" id="salario" placeholder="Salario del empleado">
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Tipo de jornada:</font>   
+                         </div>
+                         <div class="col-sm-5">
+                             <select style="width:155%" id="jornada" class="custon-select form-control">
+                                 <option value="" disabled selected>Sin Selección</option>
+                                 <option value="">01.- Diurna</option>
+                                 <option value="">02.- Nocturna</option>
+                                 <option value="">03.- Mixta</option>
+                                 <option value="">04.- Por hora</option>
+                                 <option value="">05.- Reducida</option>
+                                 <option value="">06.- Continuada</option>
+                                 <option value="">07.- Partida</option>
+                                 <option value="">08.- Por turnos</option>
+                                 <option value="">99.- Otra jornada</option>
+                             </select>
+                         </div>                   
+                     </div> 
+
+                      <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Puesto</font>   
+                         </div>
+                         <div class="col-sm-7">
+                            <input type="text" class="form-control" id="puesto" placeholder="Puesto del empleado">
+                         </div>
+                     </div>
+
+                  </div>
+
+                  <div class="row">
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Fecha nacimiento</font>
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" id="fecha" name="fecha" />
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Estado Civil</font>   
+                         </div>
+                         <div class="col-sm-7">
+                             <input type="text" class="form-control" id="civil" placeholder="Estado civil">
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="2">Telefono</font>   
+                         </div>
+                         <div class="col-sm-7">
+                             <input class="form-control" id="telefono" placeholder="2721869872"> 
+                         </div>                   
+                     </div>
+
+                    <input type="submit" value="Enviar">
+
+                    <!--<button type="button" onclick="mostrar()" >Mostrar</button>-->
+
+                  </div>
+
+                </div>
+             </form> <br>
+
+        </div> 
+     </div>
+    </div> 
+            
+
+</div>
+
+<style>
+     body{background-color: #FFCC66}  
+  </style>
+
+</body>
+</html>
