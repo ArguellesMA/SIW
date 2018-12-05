@@ -12,6 +12,9 @@
         body {
           height: inherit;
         }
+
+                                      /*Imagenes
+=========================================================================================================*/
         article {
           width: 100%;
           height: 30px;
@@ -19,11 +22,42 @@
           padding: 15em;
         }
 
-/*----------------------Edicion de Texto-----------------------------*/       
+        #host{
+          width: 100%;
+          height: 500px;
+          float: left;
+          position: relative;
+        }
+
+        #trab{
+          width: 100%;
+          height: 500px;
+          float: left;
+          position: relative;
+        }
+
+        .right{
+          float:right;
+          margin:10px;
+          width: 650px;
+          height: 350px;
+        }
+        
+        .left{
+          float: left;
+          margin:10px;
+          width: 650px;
+          height: 350px;
+        }
+
+                                  /*Edicion de Texto
+=========================================================================================================*/
+                                         
         #prin{
           color: #FB8C00;
           padding: -2em;
           margin: 0%;
+
         }
 
         h1{
@@ -43,29 +77,6 @@
           color: #009688;
           font-size: 2em;
           text-align: center;
-        }
-
-        
-
-/*-----------------Video header y footer-----------------*/
-        .header-container {
-        height: 0;
-        position: relative;
-        padding-bottom: 56.25%;
-        overflow: hidden;
-        }
- 
-       .video-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        }
- 
-        video {
-        position: absolute;
-        width: 100%;
         }
 
         .hospital p{
@@ -102,8 +113,30 @@
             margin-left: 420px;
         }
 
-        /* portfolio section styles
-/* ========================================== */
+                                  /*Video header y footer
+=========================================================================================================*/
+        .header-container {
+        height: 0;
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        }
+ 
+       .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        }
+ 
+        video {
+        position: absolute;
+        width: 100%;
+        }
+
+                                       /* Seccion de Imagenes
+========================================================================================================= */
 #portfolio {
   background: #111112;
   padding-bottom: 0px;
@@ -156,22 +189,107 @@
   color: #e6eff0;
 }
 
-/*head
-.conteneur_78390{-webkit-perspective:120px;-moz-perspective:120px;-ms-perspective:120px;perspective:120px;height:90px;width:90px} .decalage_pers_78390{-webkit-animation:anim_wifeo 3s infinite linear;-moz-animation:anim_wifeo 3s infinite linear;-ms-animation:anim_wifeo 3s infinite linear;-o-animation:anim_wifeo 3s infinite linear;animation:anim_wifeo 3s infinite linear} .cercle_rouge_78390{border-radius:50px;width:50px;height:50px;border-top:10px solid #D3D3D3;border-right:10px solid #D3D3D3;border-bottom:10px solid #D3D3D3;border-left:10px solid #0ED2F0;-webkit-animation:anim_rond 1.4s infinite linear;-moz-animation:anim_rond 1.4s infinite linear;-ms-animation:anim_rond 1.4s infinite linear;-o-animation:anim_rond 1.4s infinite linear;animation:anim_rond 1.4s infinite linear} @-webkit-keyframes anim_rond{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @-webkit-keyframes anim_wifeo{0%{-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);-ms-transform:rotateY(0deg);transform:rotateY(0deg);margin-top:0px}50%{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg);margin-top:20px}100%{-webkit-transform:rotateY(360deg);-moz-transform:rotateY(360deg);-ms-transform:rotateY(360deg);transform:rotateY(360deg);margin-top:0px}} @-moz-keyframes anim_rond{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @-moz-keyframes anim_wifeo{0%{-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);-ms-transform:rotateY(0deg);transform:rotateY(0deg);margin-top:0px}50%{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg);margin-top:20px}100%{-webkit-transform:rotateY(360deg);-moz-transform:rotateY(360deg);-ms-transform:rotateY(360deg);transform:rotateY(360deg);margin-top:0px}} @-ms-keyframes anim_rond{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @-ms-keyframes anim_wifeo{0%{-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);-ms-transform:rotateY(0deg);transform:rotateY(0deg);margin-top:0px}50%{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg);margin-top:20px}100%{-webkit-transform:rotateY(360deg);-moz-transform:rotateY(360deg);-ms-transform:rotateY(360deg);transform:rotateY(360deg);margin-top:0px}} @keyframes anim_rond{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(720deg);-moz-transform:rotate(720deg);-ms-transform:rotate(720deg);transform:rotate(720deg)}} @keyframes anim_wifeo{0%{-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);-ms-transform:rotateY(0deg);transform:rotateY(0deg);margin-top:0px}50%{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg);margin-top:20px}100%{-webkit-transform:rotateY(360deg);-moz-transform:rotateY(360deg);-ms-transform:rotateY(360deg);transform:rotateY(360deg);margin-top:0px}}
-*/
+                                    /*Seccion de contactos
+============================================================================================================== */
+#contact {
+  background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff !important;
+}
+
+#contact h3, #contact h5 {
+  color: #ffffff;
+}
+
+#contact .form-control {
+  background: transparent;
+  border-color: #808080;
+  border-radius: 2px;
+  color: #ffffff;
+  box-shadow: none;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .form-control:focus {
+  border-color: #ffffff;
+}
+
+#contact input {
+  height: 42px;
+}
+
+#contact textarea {
+  height: 106px;
+}
+
+#contact input[type="submit"] {
+  background: #b34d02;
+  border-color: transparent;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 18px;
+}
+
+#contact input[type="submit"]:hover {
+  background: #ffffff;
+  color: #b34d02;
+}
+
+#contact .media {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+                                    /* Derechos de autor
+============================================================================================================ */
+#copyright {
+  background: #111112;
+  color: #ffffff;
+  padding-top: 38px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+
+
+/* social icon */
+.social-icon {
+  padding: 0;
+  margin: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+.social-icon li a {
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  padding: 0px;
+  margin-right: 10px;
+  margin-bottom: 6px;
+}
+.social-icon li a:hover {
+  background: #b34d02;
+}
+
                                           /*BOTONES
 ==========================================================================================================================*/
 #boton{
   background: #F57C00;
   position: absolute;
         }   
-
-#host{
-  width: 100%;
-  height: 500px;
-  float: left;
-  position: relative;
-}
 
 #boton {
   border: 3px solid transparent;
@@ -186,13 +304,6 @@
   background: #ffffff;
   border-color: transparent;
   color: teal;
-}
-
-#trab{
-  width: 100%;
-  height: 500px;
-  float: left;
-  position: relative;
 }
 
 #btn{
@@ -216,17 +327,43 @@
   color: teal;
 }
 
-.right{
-  float:right;
-  margin:10px;
-  width: 650px;
-  height: 350px;
+#ih{
+  background: #F57C00;
+  position: absolute;
 }
 
-.left{
-  float: left;
-  margin:10px;
-  width: 650px;
-  height: 350px;
+#ih{
+  border: 3px solid transparent;
+  border-radius: 100px;
+  font-size: 20px;
+ /* padding: 10px 28px;
+  margin-top: 250px;
+  margin-left: 550px;
+  display: block;*/
+}
+#ih:hover{
+  background: #ffffff;
+  border-color: transparent;
+  color: rgb(7, 80, 7);
 }
 
+#ie{
+  background: #F57C00;
+  position: absolute;
+}
+
+#ie{
+  border: 3px solid transparent;
+  border-radius: 100px;
+  font-size: 20px;
+  /*padding: 10px 28px;
+  margin-top: 250px;
+  margin-left: 550px;
+  display: block;*/
+}
+
+#ie:hover{
+  background: #ffffff;
+  border-color: transparent;
+  color: rgb(7, 80, 7);
+}
