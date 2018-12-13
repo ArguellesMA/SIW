@@ -116,6 +116,57 @@ background-color: transparent;
   color: rgb(45, 55, 66);
 }
 
+.ben h1{
+  font-size: 30px;
+  color: #491e47;
+  text-align: center;
+}
+
+.ben p{
+  font-size: 20px;
+  color: #0c172b;
+  text-align: center;
+}
+                                          /* Seccion de trabajo
+/* ======================================================================================================== */
+#price .price-plan {
+  border: 2px solid transparent;
+  padding: 72px 32px 62px 32px;
+  transition: all 0.4s ease-in-out;
+} 
+
+#price .price-plan-default {
+border: 2px solid #111112;
+}
+
+#price .price-plan:hover {
+border: 2px solid #111112;
+}
+
+#price .price-title h3 {
+font-size: 12px;
+letter-spacing: 8px;
+text-transform: uppercase;
+padding-bottom: 22px;
+}
+
+#price .price-month h4 {
+color: #111112;
+font-weight: 600;
+letter-spacing: 2px;
+padding-top: 22px;
+padding-bottom: 22px;
+}
+
+#price .section-btn {
+background: #111112;
+color: #ffffff;
+}
+
+#price .section-btn:hover {
+background: #4b4b4b;
+}
+
   /*Seccion de contactos
 ============================================================================================================== */
 #contact {

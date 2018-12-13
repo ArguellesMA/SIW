@@ -78,8 +78,9 @@
       <div class="item active">
         <a href="#"><img id="sliders" src="https://dl.dropboxusercontent.com/s/oycr9utoed45y7k/23.jpg?dl=0" /></a>
         <div class="carousel-caption">
-          <h3>Meow</h3>
-          <p>Just Kitten Around</p>
+          <h3>Timoh</h3>
+          <p>Ofrece sus servicios a su hospital que<br>
+             que le garantiza una experiencia inolvidable</p>
         </div>
       </div>
 
@@ -94,32 +95,35 @@
       <div class="item">
         <a href="#"><img id="sliders" src="https://dl.dropboxusercontent.com/s/qvepkvnvg6izom0/25.jpg?dl=0" /></a>
         <div class="carousel-caption">
-          <h3>Meow</h3>
-          <p>Just Kitten Around</p>
+          <h3>Timoh</h3>
+          <p>Es una tarjeta que ayuda a su hospitale en casos de<br>
+             accidentes, obtener resultados inmediatos</p>
         </div>
       </div>
 
       <div class="item">
         <a href="#"><img id="sliders" src="https://dl.dropboxusercontent.com/s/hfdwnd9fe7l7fta/26.jpg?dl=0" /></a>
         <div class="carousel-caption">
-          <h3>Meow</h3>
-          <p>Just Kitten Around</p>
+          <h3>Timoh</h3>
+          <p>Administra los datos clinicos de su paciente<br>
+             y dar resultados positivos ante un accidente</p>
         </div>
       </div>
 
       <div class="item">
         <a href="#"><img id="sliders" src="https://dl.dropboxusercontent.com/s/cloviyo971a7i23/27.jpeg?dl=0" /></a>
         <div class="carousel-caption">
-          <h3>Meow</h3>
-          <p>Just Kitten Around</p>
+          <p>Evita retardos en la atencion de los<br>
+             Eridos y dar respuestas rapidas</p>
         </div>
       </div>
 
       <div class="item">
         <a href="#"><img id="sliders" src="https://dl.dropboxusercontent.com/s/oebdavw76u869s7/28.jpg?dl=0" /></a>
         <div class="carousel-caption">
-          <h3>Meow</h3>
-          <p>Just Kitten Around</p>
+          <h3>Timoh</h3>
+          <p>Ayuda a los hospitales dar una mejor atencion a sus<br>
+             clientes y evitar perdidas de vida</p>
         </div>
       </div>
     </div>
@@ -158,17 +162,17 @@
     <div class="modal-dialog">
         <div class="modal-content">
             
-                <div class="panel-heading" id="panels"><b>INGRESE DATOS HOSPITAL</b></div>
+                <div class="panel-heading" id="panels"><b>INGRESE DEL PACIENTE</b></div>
             
             <div class="modal-body">
                 <p class="statusMsg"></p>
-                <form>
+                <form action="php/conexioncli.php" method="POST">
                         <div class="form-group">
                             <div class="col-lg-4">
                             <label for="nombre">Nombre Publico</label>
                             </div>
                             <div class="col-lg-7">
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre"/>
+                            <input type="text" class="form-control" name="nombre" placeholder="Nombre"/>
                             </div>
                         </div>
                     
@@ -177,7 +181,7 @@
                         <label for="apellidop">Apellido Paterno</label>
                             </div>
                         <div class="col-lg-7">
-                        <input type="text" class="form-control" id="apellidop" placeholder="RFC"/>
+                        <input type="text" class="form-control" name="apellidop" placeholder="RFC"/>
                         </div>
                     </div>
 
@@ -186,7 +190,7 @@
                         <label for="apellidom">Apellido Materno</label>
                             </div>
                         <div class="col-lg-7">
-                        <input class="form-control" id="apellidom" placeholder="Entidad Federativa">
+                        <input class="form-control" name="apellidom" placeholder="Entidad Federativa">
                         </div>
                     </div>
 
@@ -195,7 +199,7 @@
                         <label for="edad">edad</label>
                             </div>
                         <div class="col-lg-7">
-                        <input type="email" class="form-control" id="edad" placeholder="Email"/>
+                        <input type="email" class="form-control" name="edad" placeholder="Email"/>
                         </div>
                     </div>
 
@@ -204,7 +208,7 @@
                         <label for="direccion">Direccion</label>
                             </div>
                         <div class="col-lg-7">
-                        <input type="text" class="form-control" id="direccion" placeholder="Contraseña"/>
+                        <input type="text" class="form-control" name="direccion" placeholder="Contraseña"/>
                         </div>
                     </div>
 
@@ -213,7 +217,7 @@
                             <label for="sexo">Sexo</label>
                             </div>
                             <div class="col-lg-7">
-                            <input type="text" class="form-control" id="sexo" placeholder="Ciudad"/>
+                            <input type="text" class="form-control" name="sexo" placeholder="Ciudad"/>
                             </div>
                     </div>
 
@@ -222,7 +226,7 @@
                         <label for="telefono">Telefono</label>
                             </div>
                         <div class="col-lg-7">
-                        <input type="text" class="form-control" id="telefono" placeholder="Contraseña"/>
+                        <input type="text" class="form-control" name="telefono" placeholder="Contraseña"/>
                         </div>
                     </div>
                     
@@ -231,7 +235,7 @@
                         <label for="telcon1">Telefono de contacto 1</label>
                             </div>
                         <div class="col-lg-7">
-                        <input type="text" class="form-control" id="telcon1" placeholder="Contraseña"/>
+                        <input type="text" class="form-control" name="telcon1" placeholder="Contraseña"/>
                         </div>
                     </div>
 
@@ -240,7 +244,7 @@
                       <label for="telcon2">Telefono de contacto 2</label>
                          </div>
                       <div class="col-lg-7">
-                      <input type="text" class="form-control" id="telcon2" placeholder="Contraseña"/>
+                      <input type="text" class="form-control" name="telcon2" placeholder="Contraseña"/>
                       </div>
                     </div>
 
@@ -249,7 +253,7 @@
                       <label for="sangre">Tipo de sangre</label>
                          </div>
                       <div class="col-lg-7">
-                      <select class="custon-select form-control" id="sangre">
+                      <select class="custon-select form-control" name="sangre">
                           <option disabled selected>Sin seleccionar</option>
                           <option>O negativo</option>
                           <option>O positivo</option>
@@ -268,7 +272,7 @@
                       <label for="discapacidad">Discapacidad</label>
                          </div>
                       <div class="col-lg-7">
-                      <select class="custon-select form-control" id="discapacidad">
+                      <select class="custon-select form-control" name="discapacidad">
                           <option disabled selected>Sin seleccionar</option>
                           <option>Ninguna</option>
                           <option>Autismo</option>
@@ -291,18 +295,31 @@
                       <label for="hospital">Hpital Asociado</label>
                          </div>
                       <div class="col-lg-7">
-                      <select class="custon-select form-control" id="hospital">
-
+                      <select class="custon-select form-control" name="hospital">
+                        <option disabled selected>Sin selccionar</option>
+                        <option>Hospital Covadonga</option>
+                        <option>Sanatorio Escudero</option>
+                        <option>Hospital Concordia</option>
+                        <option>El Buen Pastor</option>
+                        <option>Campetre Citlaltepetl</option>
+                        <option>San Felipe Neri</option>
+                        <option>Corp. Medica del sureste</option>
+                        <option>Cruz Roja Mexicana</option>
+                        <option>IMSS</option>
+                        <option>ISSSTE</option>
+                        <option>Hospita D Maria</option>
+                        <option>Hospital Millenium</option>
+                        <option>Hospital Español</option>
                         </select>
                       </div>
                     </div>
 
+                    <input class="btn btn-primary" type="submit" name="Registrar">
                 </form>
             </div>
             
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
             </div>
             
         </div>

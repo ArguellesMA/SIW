@@ -25,6 +25,13 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 
+    <script id="_wauwaa">var _wau = _wau || []; _wau.push(["classic", "zltotgacrhd9", "waa"]);
+            (function() {var s=document.createElement("script"); s.async=true;
+            s.src="http://widgets.amung.us/classic.js";
+            document.getElementsByTagName("head")[0].appendChild(s);
+            })();
+    </script>
+    
 </head>
 <body>
     <!--<div style="width:120px; height:120px; overflow:hidden; " align="center">
@@ -34,7 +41,19 @@
             </div>
         </div>
     </div>-->
-                                    <!--PRINCIPAL
+   <!-- Preloader section
+================================================== 
+<section class="preloader">
+        <div class="sk-three-bounce">
+              <div class="sk-child sk-bounce1"></div>
+              <div class="sk-child sk-bounce2"></div>
+              <div class="sk-child sk-bounce3"></div>
+        </div>-
+    </section>
+    <BGSOUND SRC="sonido.mid" LOOP=none>
+    <WIDTH=200 HEIGHT=55 AUTOSTART="true" LOOP="false" HIDDEN="true">
+    <img border='0' src='http://u.jimdo.com/www21/o/s4e9df44a0ad8ccd8/img/i0425d9e289ed1713/1297446540/std/image.gif' style='position:fixed; top:0; left:0; width:100%; height:150px;'/>
+    --> <!--PRINCIPAL
 ================================================================================================-->  
   <!--SLIDERS PRINCIPAL
 =================================================================================================================================-->    
@@ -294,13 +313,13 @@
                 
                 <div class="modal-body">
                     <p class="statusMsg"></p>
-                    <form>
+                    <form action="php/conexionhos.php" method="POST">
                             <div class="form-group">
                                 <div class="col-lg-4">
-                                <label for="nombre">Nombre</label>
+                                <label for="nombre">Nombre Hospital</label>
                                 </div>
                                 <div class="col-lg-7">
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre"/>
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre"/>
                                 </div>
                             </div>
                         
@@ -309,7 +328,7 @@
                             <label for="rfc">RFC</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input type="text" class="form-control" id="rfc" placeholder="RFC"/>
+                            <input type="text" class="form-control" name="rfc" placeholder="RFC"/>
                             </div>
                         </div>
 
@@ -318,7 +337,41 @@
                             <label for="estado">Entidad federativa</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input class="form-control" id="estado" placeholder="Entidad Federativa">
+                            <select class="custon-select form-control" name="estado">
+                                <option disabled selected>Sin seleccionar</option>
+                                <option>Aguas Calientes</option>
+                                <option>Baja California</option>
+                                <option>Baja California Sur</option>
+                                <option>Mex Campeche</option>
+                                <option>Chiapas</option>
+                                <option>Chihuahua</option>
+                                <option>Coahuila</option>
+                                <option>Colima</option>
+                                <option>Ciudad de Mexico</option>
+                                <option>Durango</option>
+                                <option>Guanajuato</option>
+                                <option>Guerrero</option>
+                                <option>Hidalgo</option>
+                                <option>Jalisco</option>
+                                <option>Estado de Mexico</option>
+                                <option>Michoacan</option>
+                                <option>Morelos</option>
+                                <option>Nayarit</option>
+                                <option>Nuevo Leon</option>
+                                <option>Oaxaca</option>
+                                <option>Puebla</option>
+                                <option>Queretaro</option>
+                                <option>Quintana Roo</option>
+                                <option>San Luis Potosi</option>
+                                <option>Sinaloa</option>
+                                <option>Sonora</option>
+                                <option>Tabasco</option>
+                                <option>Tamaulipas</option>
+                                <option>Tlaxcala</option>
+                                <option>Veracruz</option>
+                                <option>Yucatan</option>
+                                <option>Zacatecas</option>
+                            </select>
                             </div>
                         </div>
 
@@ -327,7 +380,7 @@
                             <label for="email">Email</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input type="email" class="form-control" id="email" placeholder="Email"/>
+                            <input type="email" class="form-control" name="email" placeholder="Email"/>
                             </div>
                         </div>
 
@@ -336,7 +389,7 @@
                             <label for="contraseña">Contraseña</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input type="text" class="form-control" id="contraseña" placeholder="Contraseña"/>
+                            <input type="password" class="form-control" name="contrasena" placeholder="Contraseña"/>
                             </div>
                         </div>
 
@@ -345,16 +398,16 @@
                                 <label for="ciudad">Ciudad</label>
                                 </div>
                                 <div class="col-lg-7">
-                                <input type="text" class="form-control" id="ciudad" placeholder="Ciudad"/>
+                                <input type="text" class="form-control" name="ciudad" placeholder="Ciudad"/>
                                 </div>
                             </div>
 
+                    <input class="btn btn-primary" type="submit">
                     </form>
                 </div>
                 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
                 </div>
                 
             </div>
@@ -394,13 +447,13 @@
                 
                 <div class="modal-body">
                     <p class="statusMsg"></p>
-                    <form>
+                    <form action="php/conexionemp.php" method="post">
                             <div class="form-group">
                                 <div class="col-lg-4">
                                 <label for="nombre">Nombre</label>
                                 </div>
                                 <div class="col-lg-7">
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre"/>
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre"/>
                                 </div>
                             </div>
                         
@@ -409,7 +462,7 @@
                             <label for="apellidos">Apellidos</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input type="text" class="form-control" id="apellidos" placeholder="RFC"/>
+                            <input type="text" class="form-control" name="apellidos" placeholder="RFC"/>
                             </div>
                         </div>
 
@@ -418,7 +471,41 @@
                             <label for="estado">Entidad federativa</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input class="form-control" id="estado" placeholder="Entidad Federativa">
+                            <select class="custon-select form-control" name="estado">
+                                <option disabled selected>Sin Seleccionar</option>
+                                <option>Aguas Calientes</option>
+                                <option>Baja California</option>
+                                <option>Baja California Sur</option>
+                                <option>Mex Campeche</option>
+                                <option>Chiapas</option>
+                                <option>Chihuahua</option>
+                                <option>Coahuila</option>
+                                <option>Colima</option>
+                                <option>Ciudad de Mexico</option>
+                                <option>Durango</option>
+                                <option>Guanajuato</option>
+                                <option>Guerrero</option>
+                                <option>Hidalgo</option>
+                                <option>Jalisco</option>
+                                <option>Estado de Mexico</option>
+                                <option>Michoacan</option>
+                                <option>Morelos</option>
+                                <option>Nayarit</option>
+                                <option>Nuevo Leon</option>
+                                <option>Oaxaca</option>
+                                <option>Puebla</option>
+                                <option>Queretaro</option>
+                                <option>Quintana Roo</option>
+                                <option>San Luis Potosi</option>
+                                <option>Sinaloa</option>
+                                <option>Sonora</option>
+                                <option>Tabasco</option>
+                                <option>Tamaulipas</option>
+                                <option>Tlaxcala</option>
+                                <option>Veracruz</option>
+                                <option>Yucatan</option>
+                                <option>Zacateas</option>
+                            </select>
                             </div>
                         </div>
 
@@ -427,7 +514,7 @@
                             <label for="email">Email</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input type="email" class="form-control" id="email" placeholder="Email"/>
+                            <input type="email" class="form-control" name="email" placeholder="Email"/>
                             </div>
                         </div>
 
@@ -436,7 +523,7 @@
                             <label for="contraseña">Contraseña</label>
                                 </div>
                             <div class="col-lg-7">
-                            <input type="text" class="form-control" id="contraseña" placeholder="Contraseña"/>
+                            <input type="password" class="form-control" name="contraseña" placeholder="Contraseña"/>
                             </div>
                         </div>
 
@@ -445,16 +532,16 @@
                                 <label for="ciudad">Ciudad</label>
                                 </div>
                                 <div class="col-lg-7">
-                                <input type="text" class="form-control" id="ciudad" placeholder="Ciudad"/>
+                                <input type="text" class="form-control" name="ciudad" placeholder="Ciudad"/>
                                 </div>
                             </div>
 
+                    <input class="btn btn-primary" type="submit">
                     </form>
                 </div>
                 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
                 </div>
                 
             </div>

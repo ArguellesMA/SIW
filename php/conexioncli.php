@@ -1,12 +1,12 @@
 <?php
 $servername = "localhost";
-$database = "";
+$database = "pagina";
 $username = "root";
-$password = "";
+$password = "linux123";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-if (!conn){
+if (!$conn){
     die("Connection failed: " . mysqli_connect_error()); 
 }
 
@@ -26,7 +26,7 @@ $discapacidad=$_POST['discapacidad'];
 $hospital=$_POST['hospital'];
 
 $sql = "INSERT INTO tabla (nombre, apellidop, apellidom, edad, direccion, sexo, telefono, telcon1, telcon2, sangre, discapacidad, hospital) VALUES ('$nombre', '$apellidop', '$apellidom', '$edad', '$direccion', '$sexo', '$telefono', '$telcon1', '$telcon2', '$sangre', '$discapacidad', '$hospital')";
-if (mysql_query($conn, $sql)){
+if (mysqli_query($conn, $sql)){
     echo "Datos insertados correctamente";
 }else{
     echo "Error:" .$sql . "<br>" . mysqli_error($conn);
